@@ -1,0 +1,457 @@
+/* Sticky Header */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  /* Hero Section */
+.hero-section {
+    background-image: url("/imges/hero.png"); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 100vh;
+    position: relative;
+  }
+  
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+.hero-section .filter-box {
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    color: white;
+  }
+  
+.hero-section .filter-box .btn-group .btn {
+    width: 50%;
+  }
+  
+.hero-section .filter-box .form-label,
+.hero-section .filter-box .form-check-label {
+    color: #c3c3c3;
+  }
+  
+.hero-section .filter-box input[type="number"] {
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+  }
+  
+.hero-section .filter-box input[type="number"]::placeholder {
+    color: #777;
+  }
+  
+.hero-section .btn-outline-light {
+    color: white;
+    border-color: white;
+  }
+  
+.hero-section .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+  }
+  
+.hero-section .btn-primary {
+    background-color: #e5b089;
+    border-color: #e5b089;
+  }
+  
+.hero-section .btn-secondary {
+    background-color: #333;
+    border-color: #333;
+  }
+  
+.hero-section .btn-primary:hover {
+    background-color: #d89e6e;
+    border-color: #d89e6e;
+  }
+  
+.hero-section .btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+  }
+
+  .real-estate-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .real-estate-section .property-details {
+    background-color: #333333;
+    padding: 20px;
+  }
+  
+  .real-estate-section .property-details h4, .real-estate-section .property-details p {
+    color: white;
+  }
+  
+  .real-estate-section .property-details a {
+    margin-right: 10px;
+  }
+  
+  .real-estate-section .view-section, .real-estate-section .location-section {
+    margin-bottom: 20px;
+  }
+  
+  .real-estate-section .view-section h4, .real-estate-section .location-section h4 {
+    color: white;
+  }
+  
+  .real-estate-section .view-section p, .real-estate-section .location-section p {
+    color: white;
+  }
+  .property-carousel {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .property-carousel .carousel-item {
+    height: 400px;
+  }
+  
+  .property-carousel .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .property-carousel .carousel-item h4, .property-carousel .carousel-item p {
+    color: white;
+  }
+  
+  .property-carousel .carousel-item .btn {
+    margin-right: 10px;
+  }
+
+  .buy-rent-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .buy-rent-section h2 {
+    color: white;
+  }
+  
+  .buy-rent-section p {
+    color: white;
+  }
+  
+  .buy-rent-section .text-primary {
+    color: #e5b089;
+  }
+  .real-estate-experts {
+    background-color: #222222; /* Dark background */
+    padding: 50px 0;
+  }
+  
+  .real-estate-experts h2,
+  .real-estate-experts p {
+    color: white; /* Text color */
+  }
+  
+  .real-estate-experts .counters {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .real-estate-experts .counter {
+    text-align: center;
+  }
+  
+  .real-estate-experts .counter h3 {
+    font-size: 3rem;
+  }
+  
+  .real-estate-experts .counter p {
+    font-size: 1.2rem;
+  }
+  .find-partner-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .find-partner-section h2,
+  .find-partner-section p {
+    color: white;
+  }
+  
+  .find-partner-section .text-primary {
+    color: #e5b089;
+  }
+  
+  .find-partner-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .find-partner-section .expert-card {
+    background-color: #333333;
+    padding: 20px;
+  }
+  
+  .find-partner-section .expert-card img {
+    width: 100%;
+  }
+  
+  .find-partner-section .expert-card .expert-details {
+    margin-top: 20px;
+  }
+  
+  .find-partner-section .expert-card .expert-details h4,
+  .find-partner-section .expert-card .expert-details p {
+    color: white;
+  }
+
+  .luxury-properties-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .luxury-properties-section h2 {
+    color: white;
+  }
+  
+  .luxury-properties-section .nav-pills .nav-link {
+    color: white;
+  }
+  
+  .luxury-properties-section .nav-pills .nav-link.active {
+    background-color: #e5b089;
+  }
+  
+  .luxury-properties-section .tab-pane img {
+    width: 100%;
+  }
+  
+  .luxury-properties-section .tab-pane h4,
+  .luxury-properties-section .tab-pane p {
+    color: white;
+  }
+
+  .explore-dubai-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .explore-dubai-section h2,
+  .explore-dubai-section p {
+    color: white;
+  }
+  
+  .explore-dubai-section img {
+    width: 100%;
+  }
+
+  .lifestyle-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .lifestyle-section h2,
+  .lifestyle-section p {
+    color: white;
+  }
+  
+  .lifestyle-section form {
+    margin-top: 20px;
+  }
+  
+  .lifestyle-section .form-control {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: white;
+  }
+  
+  .lifestyle-section .btn-primary {
+    background-color: #e5b089;
+    border-color: #e5b089;
+  }
+  
+  .lifestyle-section .btn-primary:hover {
+    background-color: #d89e6e;
+    border-color: #d89e6e;
+  }
+  
+  .lifestyle-section .row img {
+    width: 100%;
+  }
+  
+  .lifestyle-section .row h3,
+  .lifestyle-section .row p {
+    color: white;
+  }
+
+  .expert-insights-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .expert-insights-section h2,
+  .expert-insights-section p {
+    color: white;
+  }
+  
+  .expert-insights-section .btn-primary {
+    background-color: #e5b089;
+    border-color: #e5b089;
+  }
+  
+  .expert-insights-section .btn-primary:hover {
+    background-color: #d89e6e;
+    border-color: #d89e6e;
+  }
+  .reviews-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .reviews-section h2 {
+    color: white;
+  }
+  
+  .reviews-section .review-card {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .reviews-section .review-card h4,
+  .reviews-section .review-card p {
+    color: white;
+  }
+  
+  .reviews-section .review-card .rating {
+    color: gold;
+  }
+  
+  .reviews-section .review-card .rating .bi-star-fill {
+    font-size: 18px;
+  }
+  
+  .reviews-section .review-card a {
+    color: #e5b089;
+    text-decoration: none;
+  }
+  
+  .reviews-section .review-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .reviews-section .leave-review-btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .reviews-section .leave-review-btn button {
+    background-color: #e5b089;
+    border-color: #e5b089;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .reviews-section .leave-review-btn button:hover {
+    background-color: #d89e6e;
+  }
+
+  .news-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .news-section h2,
+  .news-section p {
+    color: white;
+  }
+  
+  .news-section img {
+    width: 100%;
+  }
+  
+  .news-section .btn-primary {
+    background-color: #e5b089;
+    border-color: #e5b089;
+  }
+  
+  .news-section .btn-primary:hover {
+    background-color: #d89e6e;
+    border-color: #d89e6e;
+  }
+  .contact-section {
+    background-color: #222222;
+    padding: 50px 0;
+  }
+  
+  .contact-section h3,
+  .contact-section p {
+    color: white;
+  }
+  
+  .contact-section img {
+    width: 100%;
+  }
+  
+  .contact-section form {
+    margin-top: 20px;
+  }
+  
+  .contact-section .form-control {
+    background-color: #333333;
+    border: 1px solid #555555;
+    color: white;
+  }
+  
+  .contact-section .btn-primary {
+    background-color: #e5b089;
+    border-color: #e5b089;
+  }
+  
+  .contact-section .btn-primary:hover {
+    background-color: #d89e6e;
+    border-color: #d89e6e;
+  }
+  
+  .call-to-action-section {
+    background-color: #111111;
+    padding: 20px 0;
+  }
+  
+  .call-to-action-section h4,
+  .call-to-action-section ul li {
+    color: white;
+  }
+  .footer-section {
+    background-color: #111111;
+    padding: 50px 0;
+  }
+  
+  .footer-section img {
+    width: 100%;
+  }
+  
+  .footer-section .nav-link {
+    color: white;
+  }
+  
+  .footer-section .social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .footer-section .social-icons li a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .footer-section p {
+    color: white;
+  }

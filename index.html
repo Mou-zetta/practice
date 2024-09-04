@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Header</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all min.css">
+</head>
+<body>
+  <header class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="imges/logo.png" alt="AX Capital Logo" class="me-2" style="width: 40px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link text-white" href="#">Buy</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Rent</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Sell</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Off-Plan</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">AX Journal</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Journal 1</a></li>
+              <li><a class="dropdown-item" href="#">Journal 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Catalogs</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">Agents</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#">The AX Way</a></li>
+        </ul>
+      </div>
+      <div class="d-flex align-items-center">
+        <a href="#" class="text-white me-3">EN</a>
+        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
+        <a href="#" class="text-white me-3">FOLLOW US</a>
+        <a href="#" class="text-white me-3">CALL US</a>
+        <div class="dropdown">
+          <button class="btn btn-link text-white dropdown-toggle" type="button" id="settingsDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="bi bi-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="settingsDropdown">
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero-section" class="d-flex align-items-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 text-white">
+          <h1>INVEST IN DUBAI REAL ESTATE WITH AX CAPITAL</h1>
+          <p>We bring Due Diligence at Your service</p>
+          <button class="btn btn-outline-light">Leave a request</button>
+        </div>
+        <div class="col-lg-5">
+          <div class="filter-box p-4">
+            <div class="btn-group mb-3 w-100" role="group">
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-secondary">Secondary</button>
+            </div>
+            <div class="mb-3">
+              <label for="property-type" class="form-label text-white">Property type</label>
+              <select id="property-type" class="form-select bg-dark text-white">
+                <option selected>Property type</option>
+                <option value="1">Apartment</option>
+                <option value="2">Villa</option>
+                <option value="3">Penthouse</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="bedrooms" class="form-label text-white">Bedrooms</label>
+              <select id="bedrooms" class="form-select bg-dark text-white">
+                <option selected>Bedrooms</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-white">Currency</label>
+              <div class="d-flex gap-2">
+                <div class="form-check text-white">
+                  <input class="form-check-input" type="radio" name="currency" id="gbp" checked>
+                  <label class="form-check-label" for="gbp">GBP</label>
+                </div>
+                <div class="form-check text-white">
+                  <input class="form-check-input" type="radio" name="currency" id="cny">
+                  <label class="form-check-label" for="cny">CNY</label>
+                </div>
+                <div class="form-check text-white">
+                  <input class="form-check-input" type="radio" name="currency" id="eur">
+                  <label class="form-check-label" for="eur">EUR</label>
+                </div>
+                <div class="form-check text-white">
+                  <input class="form-check-input" type="radio" name="currency" id="aed">
+                  <label class="form-check-label" for="aed">AED</label>
+                </div>
+                <div class="form-check text-white">
+                  <input class="form-check-input" type="radio" name="currency" id="usd">
+                  <label class="form-check-label" for="usd">USD</label>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 d-flex">
+              <input type="number" class="form-control me-2 bg-dark text-white" placeholder="Min 40 000">
+              <input type="number" class="form-control bg-dark text-white" placeholder="Max 150 000 000">
+            </div>
+            <button class="btn btn-primary w-100 mb-2">Show 81 projects</button>
+            <button class="btn btn-outline-light w-100">Properties on map</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="real-estate-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="images/property-image.jpg" alt="Property Image" class="img-fluid">
+          <h4 class="text-white">The Terraces Marasi Drive</h4>
+          <p class="text-white">Business Bay</p>
+          <div class="d-flex justify-content-between">
+            <a href="#" class="btn btn-primary">Enquire Now</a>
+            <a href="#" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h3 class="text-white">PROPERTY RANGE</h3>
+          <p class="text-white">A wide range of apartments, duplexes, and penthouses.</p>
+          <div class="view-section">
+            <h4 class="text-white">VIEW</h4>
+            <p class="text-white">Breathtaking views of Burj Khalifa</p>
+          </div>
+          <div class="location-section">
+            <h4 class="text-white">LOCATION</h4>
+            <p class="text-white">Located on Marasi Drive, providing quick access to main road arteries. 20-minute walk to Burj Khalifa and the Dubai Mall. Jumeirah Beach and Dubai International Airport are just 15 minutes away.</p>
+            <p class="text-white">Handover date: June 30, 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="property-carousel">
+    <div class="container">
+      <div class="carousel slide" data-bs-ride="carousel" id="propertyCarousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="images/property1.jpg"   
+ alt="Property 1" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h4>The Terraces Marasi Drive</h4>
+                <p>Business Bay</p>
+                <p>Handover date: June 30, 2024</p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Enquire Now</a>
+                  <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <img src="images/property2.jpg" alt="Property 2" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                <h4>Another Property</h4>
+                <p>Location</p>
+                <p>Handover date</p>
+                <div class="d-flex justify-content-between">
+                  <a href="#" class="btn btn-primary">Enquire Now</a>
+                  <a href="#" class="btn btn-secondary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#propertyCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+
+        </a>
+        <a class="carousel-control-next"href="#propertyCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </a>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#propertyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="buy-rent-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2>BUY <span class="text-primary">RENT</span></h2>
+          <p>With a comprehensive portfolio of properties and countless offers, we cover all your real estate needs.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="images/living-room.jpg" alt="Living Room Image" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="real-estate-experts">
+    <div class="container">
+      <h2 class="text-white">REAL ESTATE EXPERTS</h2>
+      <p class="text-white">We understand the fact the modem people strive for maximum comfort. A harmonious environment, communication with professionals, accurate and timely information, commitment, reliable and convenient technological solutions that save the resources that are important to them.   
+   We have implemented all these in AXCARIAL.</p>
+      <div class="counters">
+        <div class="counter">
+          <h3 class="text-white">5000+</h3>
+          <p class="text-white">PROPERTIES IN THE DATABASE</p>
+        </div>
+        <div class="counter">
+          <h3 class="text-white">30+</h3>
+          <p class="text-white">LANGUAGES</p>
+        </div>
+        <div class="counter">
+          <h3 class="text-white">500+</h3>
+          <p class="text-white">SPECIALISTS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find-partner-section">
+    <div class="container">
+      <h2>FIND YOUR PARTNER</h2>
+      <p>Our team is highly experienced and knowledgeable across all aspects of the real estate industry. We are ready to answer your questions in over 30 languages. Find the perfect match for your needs and embark on your real estate journey with AX professionals.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-primary">Specialization</h3>
+          <ul>
+            <li>Residential</li>
+            <li>Commercial</li>
+            <li>Off-Plan</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">Language</h3>
+          <ul>
+            <li>English</li>
+            <li>Arabic</li>
+            <li>Spanish</li>
+          </ul>
+        </div>
+      </div>
+      <div class="expert-card">
+        <img src="images/hisham-el-assaad.jpg" alt="Hisham El Assaad" class="img-fluid">
+        <div class="expert-details">
+          <h4>Hisham El Assaad</h4>
+          <p>Head of Primary</p>
+          <p>Experience: 5+ years</p>
+          <p>Languages: English, Arabic, Spanish</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="luxury-properties-section">
+    <div class="container">
+      <h2>Luxury Properties</h2>
+      <ul class="nav nav-pills mb-3" id="propertyTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="penthouses-tab" data-bs-toggle="tab" data-bs-target="#penthouses" type="button" role="tab" aria-controls="penthouses" aria-selected="true">Penthouses</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="apartments-tab" data-bs-toggle="tab" data-bs-target="#apartments" type="button" role="tab" aria-controls="apartments"   
+ aria-selected="false">Apartments</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="townhomes-tab" data-bs-toggle="tab" data-bs-target="#townhomes" type="button" role="tab" aria-controls="townhomes" aria-selected="false">Townhomes</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="villas-tab" data-bs-toggle="tab" data-bs-target="#villas" type="button" role="tab" aria-controls="villas" aria-selected="false">Villas</button>
+        </li>   
+
+      </ul>
+      <div class="tab-content" id="propertyTabsContent">
+        <div class="tab-pane fade show active" id="penthouses" role="tabpanel" aria-labelledby="penthouses-tab">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="images/property1.jpg" alt="Cavalli Casa Tower" class="img-fluid">
+              <h4>Cavalli Casa Tower</h4>
+              <p>Dubai Media City</p>
+              <p>Penthouse</p>
+              <p>AED 26,500,000</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/property2.jpg" alt="Le Ciel building 3" class="img-fluid">
+              <h4>Le Ciel building 3</h4>
+              <p>Sarj Dubai Mar Townhouses</p>
+              <p>Penthouse</p>
+              <p>AED 48,000,000</p>
+            </div>
+            <div class="col-md-4">
+              <img src="images/property3.jpg" alt="The Residence Burj Khalifa" class="img-fluid">
+              <h4>The Residence Burj Khalifa</h4>
+              <p>Burj Khalifa</p>
+              <p>Penthouse</p>
+              <p>AED 37,000,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="apartments" role="tabpanel" aria-labelledby="apartments-tab">
+          </div>
+        <div class="tab-pane fade" id="townhomes" role="tabpanel" aria-labelledby="townhomes-tab">
+          </div>
+        <div class="tab-pane fade" id="villas" role="tabpanel" aria-labelledby="villas-tab">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explore-dubai-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/dubai-aerial.jpg" alt="Dubai Aerial View" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h2>Explore Dubai</h2>
+          <p>Choose a district with the most attractive environment. Click below to learn more.</p>
+          <a href="#" class="btn btn-primary">AREA GUIDES</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="lifestyle-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Prompt Consultation</h2>
+          <p>Fill in the form and our agent will contact you shortly.</p>
+          <form>
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <button type="submit" class="btn btn-primary">Enquire Now</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="images/dubai-skyline.jpg" alt="Dubai Skyline" class="img-fluid">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="images/downtown-living.jpg" alt="Downtown Living" class="img-fluid">
+          <h3>Downtown Living</h3>
+          <p>Discover the vibrant heart of Dubai.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/residential-community.jpg" alt="Residential Community" class="img-fluid">
+          <h3>Residential Community</h3>
+          <p>Experience peaceful living in a serene environment.</p>
+        </div>
+        <div class="col-md-4">
+          <img src="images/marina-living.jpg" alt="Marina Living" class="img-fluid">
+          <h3>Marina Living</h3>
+          <p>Enjoy the waterfront lifestyle with stunning views.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="expert-insights-section">
+    <div class="container">
+      <h2>EXPERT REAL ESTATE INSIGHTS</h2>
+      <p>Discover the insider knowledge of Dubai real estate from our agents' expert analysis and in-depth information on the city and its property market.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>AX TALK</h3>
+          <p>Listen to podcasts from our real estate agents and stay up to date on the Dubai property market's latest trends, expert advice, and more.</p>
+          <a href="#" class="btn btn-primary">ALL PODCASTS</a>
+        </div>
+        <div class="col-md-6">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <div class="container">
+      <h2>REVIEWS</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="review-card">
+            <h4>OMER KHAN</h4>
+            <p>I was coming to the real estate market of Dubai for the first time and met Ms. Hina Taghdis of AX CAPITAL. She showed me multiple properties and truly was able to select a unit of my choice.</p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi   
+ bi-star-fill"></i>
+            </div>   
+
+            <p>READ MORE</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="review-card">
+            <h4>NATHALIE SYVAK</h4>
+            <p>Our real estate agent with AX Capital was everything we could have asked for. She listened to our requirements and found us the perfect property that met all our needs.</p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi   
+ bi-star-fill"></i>
+            </div>   
+
+            <p>READ MORE</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="review-card">
+            <h4>E-MIKE</h4>
+            <p>Dumas certainly warranted our confidence. His expertise in the real estate business in Dubai is beyond reproach. He guided us skillfully, never once imposing his opinions but rather empowering us with knowledge.</p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi   
+ bi-star-fill"></i>
+            </div>   
+
+            <p>READ MORE</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="review-card">
+            <h4>GIUSEPPE IORIO</h4>
+            <p>Nadia is a true professional in the real estate market. She presents options with great clarity and effectively addresses any questions you may have. She goes the extra mile to make sure you're completely satisfied.</p>
+            <div class="rating">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi   
+ bi-star-fill"></i>
+            </div>   
+
+            <p>READ MORE</p>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>   
+
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link"   
+ href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+      </nav>   
+
+      <div class="leave-review-btn">
+        <button class="btn btn-primary">LEAVE YOUR REVIEW</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <div class="container">
+      <h2>News</h2>
+      <p>Our team constantly shares the latest news about life, the real estate market, and important events.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/news-image1.jpg" alt="News Image 1" class="img-fluid">
+          <h3>START OF SALES: SHORELINE BY DAMAC</h3>
+        </div>
+        <div class="col-md-6">
+          <img src="images/news-image2.jpg" alt="News Image 2" class="img-fluid">
+          <h3>VISA AMNESTY IN THE UAE</h3>
+          <p>Learn more about the visa amnesty program in the UAE.</p>
+          <a href="#" class="btn btn-primary">READ MORE</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/news-image3.jpg" alt="News Image 3" class="img-fluid">
+          <h3>TOP 10 OLDEST RESTAURANTS IN THE UAE</h3>
+          <p>Discover the oldest and most beloved restaurants in Dubai.</p>
+          <a href="#" class="btn btn-primary">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/office-image.jpg" alt="Office Image" class="img-fluid">
+        </div>
+        <div class="col-md-6">
+          <h3>Visit Our Office</h3>
+          <p>Fill in the form below, and our agent will contact you shortly.</p>
+          <form>
+            <div class="form-group">
+              <label for="yourName">Your Name</label>
+              <input type="text" class="form-control" id="yourName" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="yourPhone">Your   
+ Phone</label>
+              <input type="tel" class="form-control" id="yourPhone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="yourEmail">Your Email</label>
+              <input type="email" class="form-control" id="yourEmail" placeholder="Enter   
+ your email address">
+            </div>
+            <button type="submit" class="btn btn-primary">SEND</button>
+          </form>
+          <p>Or contact us right now via WhatsApp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="call-to-action-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h4>TRENDING AREAS</h4>
+          <ul>
+            <li>Properties for sale in Dubai Marina</li>
+            <li>Properties for sale in Downtown Dubai</li>
+            <li>Properties for sale in Palm Jumeirah</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>POPULAR SEARCHES</h4>
+          <ul>
+            <li>Apartments for sale in Dubai</li>
+            <li>Villas for sale in Dubai</li>
+            <li>Penthouses for sale in Dubai</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>LIFESTYLE</h4>
+          <ul>
+            <li>Beachfront Living</li>
+            <li>Residential Community</li>
+            <li>Downtown Dubai</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>OFF-PLAN PROJECTS</h4>
+          <ul>
+            <li>Sobha Hartland</li>
+            <li>Damac Lagoons</li>
+            <li>Emaar Beachfront</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/logo.png" alt="AX Capital Logo">
+        </div>
+        <div class="col-md-3">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Apartments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Penthouses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Townhouses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Villas</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Off-Plan</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Catalogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Developers</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Area Guides</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#">Rent</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sell</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>   
+
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p>Search</p>
+        </div>
+        <div class="col-md-6">
+          <p>Dubai, UAE</p>
+          <p>14th Floor, Westbury Office, Business Bay</p>
+          <ul class="social-icons">
+            <li><a href="#"><i class="bi bi-envelope-fill"></i></a></li>
+            <li><a href="#"><i class="bi bi-telephone-fill"></i></a></li>
+            <li><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li> 
+          </ul>
+          <p>CALL US</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p>&copy; 2024 AX CAPITAL. All Rights Reserved. Terms of Use | Privacy Policy | Sitemap</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+</html>
